@@ -9,34 +9,71 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            background-image: url('photo.jpg'); 
+            background-size: cover; 
+            color: #fff; 
         }
-.navbar li a:hover, .navbar .navbar-brand:hover {
-            transform: translateY(-2px); /* Jump effect on hover */}
+        .navbar li a:hover, .navbar .navbar-brand:hover {
+            transform: translateY(-2px); 
+        }
         .navbar {
             margin-bottom: 0;
-            background-color: purple;
+            background-color: rgba(128, 0, 128, 0.9); 
             border: 0;
-            font-size: 12px !important;
+            font-size: 14px !important; 
             letter-spacing: 3px;
-            opacity: 0.9;
         }
         .navbar li a, .navbar .navbar-brand {
             color: #d5d5d5 !important;
         }
         footer {
-            background-color: purple;
+            background-color: rgba(128, 0, 128, 0.9);
             color: white;
             text-align: center;
             padding: 20px;
+            margin-top: auto; 
         }
         .info-section {
-            background-color: lightgray;
+            background-color: rgba(169, 169, 169, 0.8); 
             color: darkblue;
-            font-family: Arial;
             padding: 20px;
+            font-size: 18px; 
+            font-weight: bold; 
+        }
+        .project-images {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            margin-bottom: 20px; 
+        }
+        .project-images img {
+            width: calc(140% - 140px); 
+            border-radius: 8px; 
+            margin-bottom: 10px; 
+        }
+        ul {
+            list-style-type: none; 
+            padding: 0;
+        }
+        li {
+            text-align: center; /* Center text under images */
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline; 
+        }
+        .project-title {
+            margin-top: 5px; /* Space between image and title */
+            font-weight: normal; /* Normal font weight for titles */
         }
     </style>
 </head>
@@ -68,23 +105,52 @@
 </nav>
 
 <!-- Content -->
-<div class="container" style="padding-top: 70px;">
-    <h1>Project Page</h1>
-    <p>This page provides documentation for the Fundamentals of Computing course. You can find various resources and information related to the course here.</p>
-    <div class="info-section">
-        <h2>Available Resources</h2>
-        <ul>
-            <li><a href="link-to-resource-1">Resource 1</a></li>
-            <li><a href="link-to-resource-2">Resource 2</a></li>
-            <li><a href="link-to-resource-3">Resource 3</a></li>
-        </ul>
-    </div>
-</div>
+<main class="container" style="padding-top: 70px;">
+    <h1> </h1>
+    
+    <section class="info-section">
+        <h2>PROJECTS</h2>
+        
+        <div class="project-images">
+            <a href="num.html">
+                <img src="binary.jpeg" alt="Binary Conversion">
+                <div class="project-title">Binary Conversion</div>
+            </a>
+            <a href="link-to-resource-2">
+                <img src="binary.jpeg" alt="Resource 2">
+                <div class="project-title">Resource 2</div>
+            </a>
+            <a href="link-to-resource-3">
+                <img src="binary.jpeg" alt="Resource 3">
+                <div class="project-title">Resource 3</div>
+            </a>
+        </div>
+
+        <div class="project-images">
+            <a href="link-to-resource-4">
+                <img src="binary.jpeg" alt="Resource 4">
+                <div class="project-title">Resource 4</div>
+            </a>
+            <a href="link-to-resource-5">
+                <img src="binary.jpeg" alt="Resource 5">
+                <div class="project-title">Resource 5</div>
+            </a>
+            <a href="link-to-resource-6">
+                <img src="binary.jpeg" alt="Resource 6">
+                <div class="project-title">Resource 6</div>
+            </a>
+        </div>
+    </section>
+</main>
+
+ 
+
 
 <!-- Footer -->
 <footer>
     <p>&copy; 2024 All Rights Reserved</p>
 </footer>
-
+ 
 </body>
 </html>
+
